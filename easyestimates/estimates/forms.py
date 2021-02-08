@@ -4,16 +4,16 @@ from django.contrib.auth.models import User
 from django import forms
 from django.forms import ModelForm
 
-class RegisterForm(UserCreationForm):
-    email = forms.EmailField()
-    class Meta:
-    	model = User
-    	fields = ["username", "email", "password1", "password2"]
-
-class AddItemForm(ModelForm):
-    class Meta:
-        model = models.Item
-        fields = ["Item Name", "Item Code", "Unit", "MRP", "Rate"]
+# class RegisterForm(UserCreationForm):
+#     email = forms.EmailField()
+#     class Meta:
+#     	model = User
+#     	fields = ["username", "email", "password1", "password2"]
+#
+# class AddItemForm(ModelForm):
+#     class Meta:
+#         model = models.Item
+#         fields = ["Item Name", "Item Code", "Unit", "MRP", "Rate"]
 
 # class EstimateForm(ModelForm):
 #     privately_share_with = forms.CharField(widget=forms.Textarea, required=False, max_length=1000,
