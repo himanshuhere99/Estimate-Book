@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    {% block title %}<title>Estimate Book</title>{% endblock %}
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link rel="apple-touch-icon" sizes="180x180" href="{% static 'favicon_io/apple-touch-icon.png' %}">
+    <link rel="icon" type="image/png" sizes="32x32" href="{% static 'favicon_io/favicon-32x32.png' %}">
+    <link rel="icon" type="image/png" sizes="16x16" href="{% static 'favicon_io/favicon-16x16.png' %}">
+    <link rel="manifest" href="{% static 'favicon_io/site.webmanifest' %}">
+</head>
+<body>
+
+  <div class="topnav">
+    <!-- Centered link -->
+    <div class="topnav-centered">
+      <a class="nav-link app-name text-light" href="">
+        <img src="{% static 'images/estimate_book.png' %}" width=60% height="60%"/>
+      </a>
+    </div>
+    <!-- Left-aligned links (default) -->
+    <a href="create_estimate.html">Create Estimate</a>
+    <a href="item/add_item.html">Add Item</a>
+
+    <!-- Right-aligned links -->
+    <div class="topnav-right">
+      <a href="#logout">Logout</a>
+      <a href="#about">About</a>
+    </div>
+  </div>
